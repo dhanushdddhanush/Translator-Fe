@@ -8,7 +8,7 @@ const translator=()=>{
 
   
   useEffect(()=>{
-    fetch("https://translatelanguages-c0byacc5btaac3cv.canadacentral-01.azurewebsites.net/languages")
+    fetch("https://translatelanguages-c0byacc5btaac3cv.canadacentral-01.azurewebsites.net/languages/")
     .then((res)=>res.json())
     .then((data)=>setLang(Object.entries(data.supported_languages.translation)))
    
